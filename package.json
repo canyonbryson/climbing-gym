@@ -1,0 +1,40 @@
+{
+  "name": "climbing-gym",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sst": "sst dev --sso-session=gym-dev",
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "build:sst": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit",
+    "aws:login": "aws sso login --sso-session=gym"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.12.3",
+    "@solidjs/start": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.26",
+    "solid-js": "^1.8.15",
+    "tailwindcss": "^3.3.3",
+    "vinxi": "^0.2.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "sst": "^2.40.3",
+    "aws-cdk-lib": "2.124.0",
+    "constructs": "10.3.0",
+    "typescript": "^5.3.3",
+    "@tsconfig/node18": "^18.2.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
